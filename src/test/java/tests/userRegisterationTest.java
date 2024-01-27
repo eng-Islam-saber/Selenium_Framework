@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
@@ -20,6 +21,6 @@ public class userRegisterationTest extends TestBase
 		userRegisterationPageObject = new UserRegisterationPage(driver);
 		userRegisterationPageObject.userRegister("Islam", "Mohamed", "Islam@gmail.com", "123456789");
 		
-		
+		Assert.assertTrue( userRegisterationPageObject.registerationMessage.getText().contains("Your registration completed") );
 	}
 }

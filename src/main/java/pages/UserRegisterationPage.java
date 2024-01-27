@@ -36,6 +36,9 @@ public class UserRegisterationPage extends PageBase{
 	@FindBy(id = "register-button")
 	WebElement registerBtn;
 	
+	@FindBy(css ="div.result")
+	public  WebElement registerationMessage;
+	
 	public void userRegister(String firstName, String lastName, 
 			String email, String password)
 	{
@@ -49,6 +52,7 @@ public class UserRegisterationPage extends PageBase{
 		
 	
 		clickButton(registerBtn);
+		
 		
 	}
 	
