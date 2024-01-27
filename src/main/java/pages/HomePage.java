@@ -18,7 +18,8 @@ public class HomePage extends PageBase{
 	
 	public void openRegisterationPage()
 	{
-		registerLink.click();
+		clickButton( registerLink );
+		
 	}
 
 }

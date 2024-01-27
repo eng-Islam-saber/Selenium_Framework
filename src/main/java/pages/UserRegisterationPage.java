@@ -39,13 +39,17 @@ public class UserRegisterationPage extends PageBase{
 	public void userRegister(String firstName, String lastName, 
 			String email, String password)
 	{
-		genderMaleRdoBtn.click();
-		fistNameTxtBox.sendKeys(firstName);
-		lastNameTxtBox.sendKeys(lastName);
-		emailTxtBox.sendKeys(email);
-		passwordTxtBox.sendKeys(password);
-		confirmPasswordTxtBox.sendKeys(password);
-		registerBtn.click();
+		clickButton(genderMaleRdoBtn);
+		
+		setTextElementText(fistNameTxtBox, firstName);
+		setTextElementText(lastNameTxtBox, lastName);
+		setTextElementText(emailTxtBox, email);
+		setTextElementText(passwordTxtBox, password);
+		setTextElementText(confirmPasswordTxtBox, password);
+		
+	
+		clickButton(registerBtn);
+		
 	}
 	
 }
