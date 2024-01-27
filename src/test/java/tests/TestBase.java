@@ -1,6 +1,7 @@
 package tests;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -13,7 +14,10 @@ public class TestBase {
 	@BeforeSuite
 	public void startDriver()
 	{
-		driver = WebDriverManager.chromedriver().create();
+		
+		driver =  WebDriverManager.chromedriver().create();
+		
+		driver.get("https://demo.nopcommerce.com/");
 	}
 	
 	@AfterSuite
