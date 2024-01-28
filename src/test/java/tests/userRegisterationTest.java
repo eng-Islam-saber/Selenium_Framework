@@ -1,6 +1,7 @@
 package tests;
 
 import org.testng.Assert;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
@@ -12,9 +13,11 @@ public class userRegisterationTest extends TestBase
 	HomePage homePageObject;
 	UserRegisterationPage userRegisterationPageObject ;
 	
+	
 	@Test
 	public void UserCanRegisterSuccessfully()
 	{
+	
 		homePageObject = new HomePage(driver);
 		homePageObject.openRegisterationPage();
 		

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite  name="nopcommerce Regression suite">
-  <test name="Regression Test">
+	
+	<parameter name="browser_Type" value="Firefox" />
+  	<test name="Regression Test">
     <classes>
       <class name="tests.userRegisterationTest"/>
     </classes>
   </test> <!-- Test -->
+
 </suite> <!-- Suite -->
