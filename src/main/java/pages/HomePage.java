@@ -14,12 +14,27 @@ public class HomePage extends PageBase{
 	@FindBy(xpath = "//a[text()='Register']")
 	WebElement registerLink;
 	
+	@FindBy(xpath = "//a[text()='Log in']")
+	WebElement loginLink;
+	
+	@FindBy(xpath = "//a[text()='Log out']")
+	public WebElement logoutLink;
 	
 	
 	public void openRegisterationPage()
 	{
 		clickButton( registerLink );
 		
+	}
+	
+	public void openLoginPage()
+	{
+		clickButton( loginLink );
+	}
+	
+	public void userLogOut()
+	{
+		clickButton( logoutLink );
 	}
 
 }

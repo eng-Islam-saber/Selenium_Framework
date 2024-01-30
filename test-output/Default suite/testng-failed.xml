@@ -8,6 +8,7 @@
           <include name="startDriver"/>
           <include name="stopDriver"/>
           <include name="UserCanRegisterSuccessfully"/>
+          <include name="RegisterUserCanLogin"/>
         </methods>
       </class> <!-- tests.userRegisterationTest -->
     </classes>
