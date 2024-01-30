@@ -20,11 +20,18 @@ public class HomePage extends PageBase{
 	@FindBy(xpath = "//a[text()='Log out']")
 	public WebElement logoutLink;
 	
+	@FindBy(xpath = "//a[text()='My account']")
+	WebElement myAccountLink;
 	
 	public void openRegisterationPage()
 	{
 		clickButton( registerLink );
 		
+	}
+	
+	public void openMyAccountPage()
+	{
+		clickButton(myAccountLink);
 	}
 	
 	public void openLoginPage()
