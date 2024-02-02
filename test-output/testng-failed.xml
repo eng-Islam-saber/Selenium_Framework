@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.MyAccountTest">
+      <class name="tests.userRegisterationTest">
         <methods>
           <include name="startDriver"/>
-          <include name="UserCanRegisterSuccessfully"/>
-          <include name="registerUserCanChangeAccountPassword"/>
-          <include name="RegisterUserCanLogin"/>
           <include name="stopDriver"/>
+          <include name="UserCanRegisterSuccessfully"/>
+          <include name="takeScreenShot"/>
+          <include name="RegisterUserCanLogin"/>
         </methods>
-      </class> <!-- tests.MyAccountTest -->
+      </class> <!-- tests.userRegisterationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -43,8 +43,12 @@ public class TestBase {
 	@AfterMethod
 	public void takeScreenShot(ITestResult result) throws IOException 
 	{
-		String path = "./Screenshots/"+result.getName()+".png";
-		Helper.captureScreenshot(driver, path);
+		if( result.getStatus() == ITestResult.FAILURE ) 
+		{
+			String path = "./Screenshots/"+result.getName()+"_Failure.png";
+			Helper.captureScreenshot(driver, path);
+		}
+	
 		
 	}
 	
