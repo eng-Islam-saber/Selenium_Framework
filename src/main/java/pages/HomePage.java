@@ -9,6 +9,7 @@ public class HomePage extends PageBase{
 	public HomePage(WebDriver driver) 
 	{
 		super(driver);	
+	
 	}
 	
 	@FindBy(xpath = "//a[text()='Register']")
@@ -22,6 +23,19 @@ public class HomePage extends PageBase{
 	
 	@FindBy(xpath = "//a[text()='My account']")
 	WebElement myAccountLink;
+	
+	
+	@FindBy(xpath = "//a[text()='Contact us']")
+	WebElement contactUsLink;
+	
+	
+	public void openContactUsPage()
+	{
+		scrollPageToBottom();
+		clickButton( contactUsLink );
+		
+	}
+	
 	
 	public void openRegisterationPage()
 	{
@@ -43,5 +57,7 @@ public class HomePage extends PageBase{
 	{
 		clickButton( logoutLink );
 	}
+	
+	
 
 }
