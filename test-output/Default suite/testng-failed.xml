@@ -3,18 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.AddProductReviewTest">
+      <class name="tests.RegisterUserCheckOutProductTest">
         <methods>
-          <include name="RegisterUserCanLogin"/>
           <include name="startDriver"/>
-          <include name="loginUserCanAddProductReview"/>
-          <include name="UserCanRegisterSuccessfully"/>
-          <include name="userCanSearchForProduct"/>
+          <include name="registerUserCanAddProductToCart"/>
           <include name="stopDriver"/>
-          <include name="RegisterUserCanLogout"/>
+          <include name="registerUserCanSearchForProduct"/>
+          <include name="RegisterUserCanDownloadInvoice"/>
+          <include name="UserCanRegisterSuccessfully"/>
           <include name="takeScreenShot"/>
+          <include name="RegisterUserCanLogin"/>
+          <include name="registerUserCanCheckoutProduct"/>
         </methods>
-      </class> <!-- tests.AddProductReviewTest -->
+      </class> <!-- tests.RegisterUserCheckOutProductTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

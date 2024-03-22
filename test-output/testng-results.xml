@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-10T13:10:01 EET" name="Default suite" finished-at="2024-02-10T13:10:16 EET" duration-ms="15404">
+  <suite started-at="2024-03-22T13:12:13 EET" name="Default suite" finished-at="2024-03-22T13:13:18 EET" duration-ms="64571">
     <groups>
     </groups>
-    <test started-at="2024-02-10T13:10:01 EET" name="Default test" finished-at="2024-02-10T13:10:16 EET" duration-ms="15404">
-      <class name="tests.AddProductReviewTest">
-        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.AddProductReviewTest@1a942c18]" started-at="2024-02-10T13:09:51 EET" name="startDriver" finished-at="2024-02-10T13:10:01 EET" duration-ms="10073" status="PASS">
+    <test started-at="2024-03-22T13:12:13 EET" name="Default test" finished-at="2024-03-22T13:13:18 EET" duration-ms="64571">
+      <class name="tests.RegisterUserCheckOutProductTest">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.RegisterUserCheckOutProductTest@449a4f23]" started-at="2024-03-22T13:12:03 EET" name="startDriver" finished-at="2024-03-22T13:12:13 EET" duration-ms="10202" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,86 +18,101 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="UserCanRegisterSuccessfully()[pri:0, instance:tests.AddProductReviewTest@1a942c18]" started-at="2024-02-10T13:10:01 EET" name="UserCanRegisterSuccessfully" finished-at="2024-02-10T13:10:06 EET" duration-ms="5320" status="PASS">
+        <test-method signature="UserCanRegisterSuccessfully()[pri:0, instance:tests.RegisterUserCheckOutProductTest@449a4f23]" started-at="2024-03-22T13:12:13 EET" name="UserCanRegisterSuccessfully" finished-at="2024-03-22T13:12:19 EET" duration-ms="5433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserCanRegisterSuccessfully -->
-        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:tests.AddProductReviewTest@1a942c18]" started-at="2024-02-10T13:10:06 EET" name="takeScreenShot" finished-at="2024-02-10T13:10:06 EET" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:tests.RegisterUserCheckOutProductTest@449a4f23]" started-at="2024-03-22T13:12:19 EET" name="takeScreenShot" finished-at="2024-03-22T13:12:19 EET" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserCanRegisterSuccessfully status=SUCCESS method=AddProductReviewTest.UserCanRegisterSuccessfully()[pri:0, instance:tests.AddProductReviewTest@1a942c18] output={null}]]]>
+                <![CDATA[[TestResult name=UserCanRegisterSuccessfully status=SUCCESS method=RegisterUserCheckOutProductTest.UserCanRegisterSuccessfully()[pri:0, instance:tests.RegisterUserCheckOutProductTest@449a4f23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method signature="RegisterUserCanLogin()[pri:0, instance:tests.AddProductReviewTest@1a942c18]" started-at="2024-02-10T13:10:06 EET" name="RegisterUserCanLogin" finished-at="2024-02-10T13:10:10 EET" depends-on-methods="tests.AddProductReviewTest.UserCanRegisterSuccessfully" duration-ms="3622" status="PASS">
+        <test-method signature="RegisterUserCanLogin()[pri:0, instance:tests.RegisterUserCheckOutProductTest@449a4f23]" started-at="2024-03-22T13:12:19 EET" name="RegisterUserCanLogin" finished-at="2024-03-22T13:12:22 EET" depends-on-methods="tests.RegisterUserCheckOutProductTest.UserCanRegisterSuccessfully" duration-ms="3123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterUserCanLogin -->
-        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:tests.AddProductReviewTest@1a942c18]" started-at="2024-02-10T13:10:10 EET" name="takeScreenShot" finished-at="2024-02-10T13:10:10 EET" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:tests.RegisterUserCheckOutProductTest@449a4f23]" started-at="2024-03-22T13:12:22 EET" name="takeScreenShot" finished-at="2024-03-22T13:12:22 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=RegisterUserCanLogin status=SUCCESS method=AddProductReviewTest.RegisterUserCanLogin()[pri:0, instance:tests.AddProductReviewTest@1a942c18] output={null}]]]>
+                <![CDATA[[TestResult name=RegisterUserCanLogin status=SUCCESS method=RegisterUserCheckOutProductTest.RegisterUserCanLogin()[pri:0, instance:tests.RegisterUserCheckOutProductTest@449a4f23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method signature="userCanSearchForProduct()[pri:0, instance:tests.AddProductReviewTest@1a942c18]" started-at="2024-02-10T13:10:10 EET" name="userCanSearchForProduct" finished-at="2024-02-10T13:10:12 EET" depends-on-methods="tests.AddProductReviewTest.RegisterUserCanLogin" duration-ms="2557" status="PASS">
+        <test-method signature="registerUserCanSearchForProduct()[pri:0, instance:tests.RegisterUserCheckOutProductTest@449a4f23]" started-at="2024-03-22T13:12:22 EET" name="registerUserCanSearchForProduct" finished-at="2024-03-22T13:12:26 EET" depends-on-methods="tests.RegisterUserCheckOutProductTest.RegisterUserCanLogin" duration-ms="3736" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userCanSearchForProduct -->
-        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:tests.AddProductReviewTest@1a942c18]" started-at="2024-02-10T13:10:12 EET" name="takeScreenShot" finished-at="2024-02-10T13:10:12 EET" duration-ms="1" status="PASS">
+        </test-method> <!-- registerUserCanSearchForProduct -->
+        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:tests.RegisterUserCheckOutProductTest@449a4f23]" started-at="2024-03-22T13:12:26 EET" name="takeScreenShot" finished-at="2024-03-22T13:12:26 EET" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userCanSearchForProduct status=SUCCESS method=AddProductReviewTest.userCanSearchForProduct()[pri:0, instance:tests.AddProductReviewTest@1a942c18] output={null}]]]>
+                <![CDATA[[TestResult name=registerUserCanSearchForProduct status=SUCCESS method=RegisterUserCheckOutProductTest.registerUserCanSearchForProduct()[pri:0, instance:tests.RegisterUserCheckOutProductTest@449a4f23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method signature="loginUserCanAddProductReview()[pri:0, instance:tests.AddProductReviewTest@1a942c18]" started-at="2024-02-10T13:10:12 EET" name="loginUserCanAddProductReview" finished-at="2024-02-10T13:10:15 EET" depends-on-methods="tests.AddProductReviewTest.userCanSearchForProduct" duration-ms="2611" status="PASS">
+        <test-method signature="registerUserCanAddProductToCart()[pri:0, instance:tests.RegisterUserCheckOutProductTest@449a4f23]" started-at="2024-03-22T13:12:26 EET" name="registerUserCanAddProductToCart" finished-at="2024-03-22T13:12:35 EET" depends-on-methods="tests.RegisterUserCheckOutProductTest.registerUserCanSearchForProduct" duration-ms="9914" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginUserCanAddProductReview -->
-        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:tests.AddProductReviewTest@1a942c18]" started-at="2024-02-10T13:10:15 EET" name="takeScreenShot" finished-at="2024-02-10T13:10:15 EET" duration-ms="1" status="PASS">
+        </test-method> <!-- registerUserCanAddProductToCart -->
+        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:tests.RegisterUserCheckOutProductTest@449a4f23]" started-at="2024-03-22T13:12:35 EET" name="takeScreenShot" finished-at="2024-03-22T13:12:35 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginUserCanAddProductReview status=SUCCESS method=AddProductReviewTest.loginUserCanAddProductReview()[pri:0, instance:tests.AddProductReviewTest@1a942c18] output={null}]]]>
+                <![CDATA[[TestResult name=registerUserCanAddProductToCart status=SUCCESS method=RegisterUserCheckOutProductTest.registerUserCanAddProductToCart()[pri:0, instance:tests.RegisterUserCheckOutProductTest@449a4f23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method signature="RegisterUserCanLogout()[pri:0, instance:tests.AddProductReviewTest@1a942c18]" started-at="2024-02-10T13:10:15 EET" name="RegisterUserCanLogout" finished-at="2024-02-10T13:10:16 EET" depends-on-methods="tests.AddProductReviewTest.loginUserCanAddProductReview" duration-ms="1113" status="PASS">
+        <test-method signature="registerUserCanCheckoutProduct()[pri:0, instance:tests.RegisterUserCheckOutProductTest@449a4f23]" started-at="2024-03-22T13:12:35 EET" name="registerUserCanCheckoutProduct" finished-at="2024-03-22T13:13:06 EET" depends-on-methods="tests.RegisterUserCheckOutProductTest.registerUserCanAddProductToCart" duration-ms="30838" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RegisterUserCanLogout -->
-        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:tests.AddProductReviewTest@1a942c18]" started-at="2024-02-10T13:10:16 EET" name="takeScreenShot" finished-at="2024-02-10T13:10:16 EET" duration-ms="1" status="PASS">
+        </test-method> <!-- registerUserCanCheckoutProduct -->
+        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:tests.RegisterUserCheckOutProductTest@449a4f23]" started-at="2024-03-22T13:13:06 EET" name="takeScreenShot" finished-at="2024-03-22T13:13:06 EET" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=RegisterUserCanLogout status=SUCCESS method=AddProductReviewTest.RegisterUserCanLogout()[pri:0, instance:tests.AddProductReviewTest@1a942c18] output={null}]]]>
+                <![CDATA[[TestResult name=registerUserCanCheckoutProduct status=SUCCESS method=RegisterUserCheckOutProductTest.registerUserCanCheckoutProduct()[pri:0, instance:tests.RegisterUserCheckOutProductTest@449a4f23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method is-config="true" signature="stopDriver()[pri:0, instance:tests.AddProductReviewTest@1a942c18]" started-at="2024-02-10T13:10:16 EET" name="stopDriver" finished-at="2024-02-10T13:10:17 EET" duration-ms="1097" status="PASS">
+        <test-method signature="RegisterUserCanDownloadInvoice()[pri:0, instance:tests.RegisterUserCheckOutProductTest@449a4f23]" started-at="2024-03-22T13:13:06 EET" name="RegisterUserCanDownloadInvoice" finished-at="2024-03-22T13:13:18 EET" depends-on-methods="tests.RegisterUserCheckOutProductTest.registerUserCanCheckoutProduct" duration-ms="11260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterUserCanDownloadInvoice -->
+        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:tests.RegisterUserCheckOutProductTest@449a4f23]" started-at="2024-03-22T13:13:18 EET" name="takeScreenShot" finished-at="2024-03-22T13:13:18 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RegisterUserCanDownloadInvoice status=SUCCESS method=RegisterUserCheckOutProductTest.RegisterUserCanDownloadInvoice()[pri:0, instance:tests.RegisterUserCheckOutProductTest@449a4f23] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="stopDriver()[pri:0, instance:tests.RegisterUserCheckOutProductTest@449a4f23]" started-at="2024-03-22T13:13:18 EET" name="stopDriver" finished-at="2024-03-22T13:13:19 EET" duration-ms="922" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
-      </class> <!-- tests.AddProductReviewTest -->
+      </class> <!-- tests.RegisterUserCheckOutProductTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -54,8 +54,10 @@ public class AddProductReviewTest extends TestBase{
 	@Test(dependsOnMethods = {"RegisterUserCanLogin"})
 	public void userCanSearchForProduct()
 	{
+		homePageObject = new HomePage(driver);
+		homePageObject.productSearch(productName);
+		
 		searchPageObject = new SearchPage(driver);
-		searchPageObject.productSearch(productName);
 		searchPageObject.openProductDetailsPage();
 		
 		productDetailsObject = new ProductDetailsPage(driver);
